@@ -42,7 +42,7 @@ $entries = $conn->query("SELECT * FROM guestbook ORDER BY created_at DESC");
     </style>
 </head>
 <body>
-    <h1>Guestbook</h1>
+    <h1>Chat-Box</h1>
 
     <div class="status">
         PHP <?= phpversion() ?> | MySQL <?= $conn->server_info ?> | Server: <?= gethostname() ?>
@@ -51,7 +51,7 @@ $entries = $conn->query("SELECT * FROM guestbook ORDER BY created_at DESC");
     <form method="POST">
         <input type="text" name="name" placeholder="Your name" required>
         <textarea name="message" placeholder="Your message" rows="3" required></textarea>
-        <button type="submit">Sign guestbook</button>
+        <button type="submit">POST</button>
     </form>
 
     <h2>Entries</h2>
