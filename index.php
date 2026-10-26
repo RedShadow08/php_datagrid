@@ -42,7 +42,7 @@ $entries = $conn->query("SELECT * FROM guestbook ORDER BY created_at DESC");
     </style>
 </head>
 <body>
-    <h1>Chat-Box</h1>
+    <h1>Chat-BOt</h1>
 
     <div class="status">
         PHP <?= phpversion() ?> | MySQL <?= $conn->server_info ?> | Server: <?= gethostname() ?>
